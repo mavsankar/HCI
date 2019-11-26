@@ -1,0 +1,149 @@
+.header {
+  background-image: linear-gradient(to right,#0485FA,#006DCA,#B93B13, #B63A14);
+  border-radius: 20px;
+  vertical-align: middle;
+}
+
+h1 {
+  padding: 5% 0;
+  font: 44px "Arial";
+  text-align: center;
+  color: white;
+  margin-bottom: 1%;
+}
+
+
+
+
+
+@media (max-width: 699px) {
+  .svg--lg {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .svg--sm {
+    display: none;
+  }
+}
+
+.date{
+    animation-name: "zoom";
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    height: 10%;
+    width: 90%;
+    text-align: center;
+    margin:auto;
+    margin-top: 3%;
+
+}
+
+@keyframes zoom{
+  0% {transform: scale(1.0)}
+  50% {transform: scale(0.95)}
+  100% {transform: scale(1.0)}
+}
+
+
+p {
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1pt;
+  font-weight: 700;
+}
+p span {
+    
+  display: inline-block;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 500;
+          perspective: 500;
+  -webkit-font-smoothing: antialiased;
+}
+p span::before,
+p span::after {
+    
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -1px;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+  content: attr(data-text);
+}
+p span::before {
+    
+  z-index: 1;
+  color: rgba(0,0,0,0.2);
+  -webkit-transform: scale(1.1, 1) skew(0deg, 20deg);
+          transform: scale(1.1, 1) skew(0deg, 20deg);
+}
+p span::after {
+  z-index: 2;
+  color: black;
+  text-shadow: -1px 0 1px black, 1px 0 1px rgba(0,0,0,0.8);
+  -webkit-transform: rotateY(-40deg);
+          transform: rotateY(-40deg);
+}
+p span:hover::before {
+  -webkit-transform: scale(1.1, 1) skew(0deg, 5deg);
+          transform: scale(1.1, 1) skew(0deg, 5deg);
+}
+p span:hover::after {
+  -webkit-transform: rotateY(-10deg);
+          transform: rotateY(-10deg);
+}
+p span + span {
+    
+  margin-left: 0.3pt;
+}
+@media (min-width: 20pt) {
+  p {
+    font-size: 20pt;
+  }
+  p span::before,
+  p span::after {
+
+    display: block;
+  }
+}
+@media (min-width: 30pt) {
+  p {
+    font-size: 30pt;
+  }
+}
+@media (min-width: 40pt) {
+  p {
+    font-size: 50pt;
+  }
+}
+@media (min-width: 60pt) {
+  p {
+    font-size: 30pt;
+  }
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+}
+
+
