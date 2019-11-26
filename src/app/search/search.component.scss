@@ -1,0 +1,38 @@
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 300px;
+  }
+  
+  .example-option-img {
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  
+ 
+  .mat-autocomplete-panel{
+    max-height: 400px !important;  
+  }
+  .mat-option{
+      height: 400px !important;
+      margin-top:5px;
+  } 
+  .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: white !important;
+}
+
+.mat-form-field-underline {
+ /*change color of underline*/
+  background-color: white !important;
+} 
+
+.mat-form-field-ripple {
+ /*change color of underline when focused*/
+ background-color: white !important;;
+} 
