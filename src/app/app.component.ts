@@ -10,5 +10,8 @@ export class AppComponent  {
   title = 'Hci';
   searchKey:string;
   constructor(private router:Router){}
-  
+  scroll(el: HTMLElement) {
+    console.log(el);
+    el.scrollIntoView();
+  }
 }

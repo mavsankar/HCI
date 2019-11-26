@@ -1,45 +1,47 @@
-
 <!--Navbar-->
-<mdb-navbar SideClass="pt-3 navbar navbar-expand-lg navbar-dark bg-secondary" [containerInside]="false">
+<mdb-navbar SideClass="pt-3  shadow-none navbar  navbar-expand-lg navbar-light" [containerInside]="false" >
 
   <!-- Navbar brand -->
-  <mdb-navbar-brand><a class="navbar-brand" href="#">Navbar</a></mdb-navbar-brand>
+  <mdb-navbar-brand   ><a class="navbar-brand " href="#">Samgatha</a></mdb-navbar-brand>
 
   <!-- Collapsible content -->
-  <links>
+  <links >
 
     <!-- Links -->
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item" [ngClass]="{'active':router.url === '/'}">
-        <a class="nav-link waves-light" [routerLink] = "['']"  mdbWavesEffect>Home</a>
+    <div class="m-auto " >  
+    <ul class="navbar-nav" >
+      <li class="nav-item" [ngClass]="{'activeButton':router.url === '/'}">
+        <a class="nav-link" [routerLink] = "['']"  mdbWavesEffect>Home</a>
       </li>
-      <li class="nav-item" [ngClass]="{'active':router.url === '/events'}">
+      <li class="nav-item" [ngClass]="{'activeButton':router.url === '/events'}">
         <a class="nav-link waves-light" [routerLink] = "['events']"  mdbWavesEffect>Events</a>
       </li>
-      <li class="nav-item" [ngClass]="{'active':router.url === '/workshops'}">
+      <li class="nav-item" [ngClass]="{'activeButton':router.url === '/workshops'}">
         <a class="nav-link waves-light" [routerLink] = "['workshops']" mdbWavesEffect>Workshops</a>
       </li>
-      <li class="nav-item" [ngClass]="{'active':router.url === '/aboutus'}">
-          <a class="nav-link waves-light" [routerLink] = "['aboutus']" mdbWavesEffect>About Us</a>
+      <li class="nav-item" [ngClass]="{'activeButton':router.url === '/aboutus'}">
+          <a href="#aboutus" class="nav-link waves-light"   mdbWavesEffect>About Us</a>
         </li>
-        <li class="nav-item" [ngClass]="{'active':router.url === '/sponsors'}">
+        <li class="nav-item" [ngClass]="{'activeButton':router.url === '/sponsors'}">
           <a class="nav-link waves-light" [routerLink] = "['sponsors']" mdbWavesEffect>Sponsors</a>
         </li>
+        <li class="nav-item" [ngClass]="{'activeButton':router.url === '/proshows'}">
+          <a class="nav-link waves-light" [routerLink] = "['proshows']" mdbWavesEffect>Proshows</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'activeButton':router.url === '/contactus'}">
+          <a class="nav-link waves-light" [routerLink] = "['contact']" mdbWavesEffect>Contact us</a>
+        </li>
     </ul>
-    <!-- Search form -->
-    <app-search></app-search>
+    </div>
 
-    <li class="nav-item avatar mb-3 dropdown" dropdown>
-        <a dropdownToggle  type="button" class="nav-link dropdown-toggle waves-light" >
-          <div  style="height: 40px; width: 40px; display: inline-block; background-color:black "  class="rounded-circle  z-depth-0"></div></a>
-        <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Login</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Register</a>
-        </div>
-      </li>
+    <!-- Search form -->
+
+      <div style="float: right">
+          <app-search  ></app-search>
+      </div>
   </links>
   <!-- Collapsible content -->
-
+  
 </mdb-navbar>
 <!--/.Navbar-->
 <router-outlet></router-outlet>
