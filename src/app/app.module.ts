@@ -9,11 +9,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchComponent } from './search/search.component';
 import { MatInputModule, MatTableModule, MatPaginatorModule, MatSortModule,MatAutocompleteModule } from '@angular/material';
+import { HttpClientModule } from '@angular/common/http';
+import { EventsComponent } from './Events/events.component';
+import { WorkshopsComponent } from './Workshops/worshops.component';
+import { SponsorsComponent } from './Sponsors/sponsors.component';
+import { AboutusComponent } from './Aboutus/aboutus.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    SearchComponent
+    SearchComponent,
+    EventsComponent,
+    WorkshopsComponent,
+    SponsorsComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +35,8 @@ import { MatInputModule, MatTableModule, MatPaginatorModule, MatSortModule,MatAu
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,38 +10,22 @@
 
     <!-- Links -->
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+      <li class="nav-item" [ngClass]="{'active':router.url === '/'}">
+        <a class="nav-link waves-light" [routerLink] = "['']"  mdbWavesEffect>Home</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link waves-light"  mdbWavesEffect>Events</a>
+      <li class="nav-item" [ngClass]="{'active':router.url === '/events'}">
+        <a class="nav-link waves-light" [routerLink] = "['events']"  mdbWavesEffect>Events</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect>Workshops</a>
+      <li class="nav-item" [ngClass]="{'active':router.url === '/workshops'}">
+        <a class="nav-link waves-light" [routerLink] = "['workshops']" mdbWavesEffect>Workshops</a>
       </li>
-      <li class="nav-item">
-          <a class="nav-link waves-light" mdbWavesEffect>About Us</a>
+      <li class="nav-item" [ngClass]="{'active':router.url === '/aboutus'}">
+          <a class="nav-link waves-light" [routerLink] = "['aboutus']" mdbWavesEffect>About Us</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link waves-light" mdbWavesEffect>Sponsors</a>
+        <li class="nav-item" [ngClass]="{'active':router.url === '/sponsors'}">
+          <a class="nav-link waves-light" [routerLink] = "['sponsors']" mdbWavesEffect>Sponsors</a>
         </li>
-       
-      <!-- Dropdown
-      <li class="nav-item dropdown" dropdown>
-        <a dropdownToggle  type="button" class="nav-link dropdown-toggle waves-light" >
-          Basic dropdown<span class="caret"></span></a>
-        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
-          <div class="divider dropdown-divider"></div>
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
-        </div>
-      </li> -->
-
     </ul>
-    <!-- Links -->
-
     <!-- Search form -->
     <app-search></app-search>
 

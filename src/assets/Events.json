@@ -1,0 +1,24 @@
+{
+    "Events": [
+        {
+          "name": "Battle of Bands",
+          "description": "Timings: 2-3:30pm",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Arkansas.svg"
+        },
+        {
+          "name": "Dance Wars",
+          "description":"Timings: TBD",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg"
+        },
+        {
+          "name": "Who eats more food?",
+          "description": "Timings: Whole day event",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Florida.svg"
+        },
+        {
+          "name": "Suspense Event",
+          "description": "Timings: Neekenduku",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Texas.svg"
+        }
+    ]
+}

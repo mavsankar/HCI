@@ -1,8 +1,9 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 import {ViewEncapsulation} from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 
 export interface State {
@@ -21,43 +22,24 @@ export interface State {
   encapsulation:ViewEncapsulation.None
 })
 
-export class SearchComponent {
+export class SearchComponent implements OnInit{
   stateCtrl = new FormControl();
   filteredStates: Observable<State[]>;
   searchKey:string;
-  states: State[] = [
-    {
-      name: 'Battle of Bands',
-      description: 'Timings: 2-3:30pm',
-      // https://commons.wikimedia.org/wiki/File:Flag_of_Arkansas.svg
-      image: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Arkansas.svg'
-    },
-    {
-      name: 'Dance Wars',
-      description:'Timings: TBD',
-      // https://commons.wikimedia.org/wiki/File:Flag_of_California.svg
-      image: 'https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg'
-    },
-    {
-      name: 'Who eats more food?',
-      description: 'Timings: Whole day event',
-      // https://commons.wikimedia.org/wiki/File:Flag_of_Florida.svg
-      image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Florida.svg'
-    },
-    {
-      name: 'Suspense Event',
-      description: 'Timings: Neekenduku',
-      // https://commons.wikimedia.org/wiki/File:Flag_of_Texas.svg
-      image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Texas.svg'
-    }
-  ];
-
-  constructor() {
+  states: State[];
+  ngOnInit(){
     this.filteredStates = this.stateCtrl.valueChanges
-      .pipe(
-        startWith(''),
-        map(state => state ? this._filterStates(state) : this.states.slice())
-      );
+    .pipe(
+      startWith(''),
+      map(state => state ? this._filterStates(state) : this.states.slice())
+    );
+    this.http.get("../assets/Events.json").subscribe(data=>{
+        this.states = data['Events'];
+    });
+  }
+  
+  constructor( private http:HttpClient) {
+  
   }
 
   private _filterStates(value: string): State[] {
