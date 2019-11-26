@@ -1,19 +1,28 @@
-.header {
-  background-image: linear-gradient(to right,#0485FA,#006DCA,#B93B13, #B63A14);
+header {
+  position: relative;
+  height: 300px;
+  background-color: #006DCA;
   border-radius: 20px;
-  vertical-align: middle;
+  //B63A14
 }
 
 h1 {
-  padding: 5% 0;
+  padding: 100px 0;
   font: 44px "Arial";
   text-align: center;
-  color: white;
-  margin-bottom: 1%;
 }
 
+header h1 {
+  color: white;
+}
 
-
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
+  /* set height to pixels if you want angle to change with screen width */
+}
 
 
 @media (max-width: 699px) {
