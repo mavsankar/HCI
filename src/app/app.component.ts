@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class AppComponent  {
   title = 'Hci';
   searchKey:string;
-  constructor(private router:Router){}
+  constructor(public router:Router){}
   scroll(el: HTMLElement) {
     console.log(el);
     el.scrollIntoView();

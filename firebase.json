@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "Hci",
+      "public": "dist/Hci",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

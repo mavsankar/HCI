@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "hcitestwebsite": {
+      "hosting": {
+        "Hci": [
+          "hcitestwebsite"
+        ]
+      }
+    }
+  }
+}
