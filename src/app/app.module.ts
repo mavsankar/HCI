@@ -16,6 +16,8 @@ import { SponsorsComponent } from './Sponsors/sponsors.component';
 import { AboutusComponent } from './Aboutus/aboutus.component';
 import { EventComponent } from './Event/event.component';
 import { WorkshopComponent } from './Workshop/workshop.component';
+import {LoadingBarHttpClientModule} from '@ngx-loading-bar/http-client'
+import { LoadingBarModule } from '@ngx-loading-bar/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +42,9 @@ import { WorkshopComponent } from './Workshop/workshop.component';
     MatPaginatorModule,
     MatSortModule,
     MatAutocompleteModule,
-    HttpClientModule
+    HttpClientModule,
+    LoadingBarHttpClientModule,
+    LoadingBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
