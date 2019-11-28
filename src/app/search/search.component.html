@@ -4,7 +4,7 @@
           <mat-autocomplete  #auto="matAutocomplete">
               <div *ngIf = 'searchKey'>
             <mat-option   *ngFor="let state of filteredStates | async" [value]="state.name">
-                <div  class="card">
+                <div [routerLink]="[state.Category,state.name]"  class="card">
 
                         <!-- Card image -->
                         <img class="card-img-top" style="height: 200px" [src]="state.image" alt="Card image cap">
@@ -15,10 +15,7 @@
                         <!-- Title -->
                         <h4 class="card-title"><a>{{state.name}}</a></h4>
                         <!-- Text -->
-                        <p class="card-text">{{state.description}}</p>
-                        <!-- Button -->
-                        <a [routerLink]="[state.Category,state.name]" class="btn btn-primary">Go to the Event</a>
-                    
+                        <p class="card-text">{{state.description}}</p>                    
                         </div>
                     
                     </div>

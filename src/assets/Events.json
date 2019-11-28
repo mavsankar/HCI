@@ -14,7 +14,7 @@
         },
         {
           "name": "WRECKAGE",
-          "description": "Description",
+          "description": "Something Related to Cars",
           "image": "../../assets/wrechage.jpg",
           "Category":"events"
         },
@@ -37,7 +37,7 @@
           "Category":"events"
         },
         {
-          "name": "THE THREE MUSKETEERS",
+          "name": "THREE MUSKETEERS",
           "description":"Description",
           "image": "../../assets/3musketeers..jpg",
           "Category":"events"

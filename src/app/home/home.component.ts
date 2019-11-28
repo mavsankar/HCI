@@ -19,7 +19,5 @@ export class HomeComponent implements OnInit {
   aboutus = "About Us";
   aboutUs = this.aboutus.split("");
   ngOnInit() {  }
-  scroll = (a):void=>{
-    console.log(a);
-  }
+  
 }

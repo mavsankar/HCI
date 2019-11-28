@@ -7,42 +7,20 @@
 }
 
 
-header {
+.header {
   position: relative;
-  height: 100%;
   border-radius: 20px;
   //B63A14
 }
 
 h1 {
-  padding: 10% 0;
-  font-size: 6vw;
+  font-size: 4vw;
 }
 
-header h1 {
+.header h1 {
   color: white;
 }
 
-svg {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 10vw;
-  /* set height to pixels if you want angle to change with screen width */
-}
-
-
-@media (max-width: 699px) {
-  .svg--lg {
-    display: none;
-  }
-}
-
-@media (min-width: 700px) {
-  .svg--sm {
-    display: none;
-  }
-}
 
 .date{
     animation-name: "zoom";

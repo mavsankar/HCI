@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { filter } from 'minimatch';
+import { LoadingBarService } from '@ngx-loading-bar/core';
 
 @Component({
   selector: 'app-workshops',
@@ -9,16 +10,22 @@ import { filter } from 'minimatch';
 })
 export class WorkshopsComponent implements OnInit {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient,private loadingbar:LoadingBarService) { }
   events:any = [];
   ngOnInit() {
     this.http.get("../assets/Events.json").subscribe(data=>{
-      data["Events"].forEach(element => {
-        if(element.Category === 'workshops')
-          {
-            this.events.push(element);
-          }
-      });
+      this.loadingbar.start(0);
+      setTimeout(()=>{
+        data["Events"].forEach(element => {
+          if(element.Category === 'workshops')
+            {
+              this.events.push(element);
+            }
+        });
+      },2000);
+      setTimeout(()=>{
+        this.loadingbar.complete();
+      },3000);
     })
   }
 }
