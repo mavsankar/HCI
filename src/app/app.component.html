@@ -13,22 +13,22 @@
       <li class="nav-item" [ngClass]="{'activeButton':router.url === '/'}">
         <a class="nav-link" [routerLink] = "['']"  mdbWavesEffect>Home</a>
       </li>
-      <li class="nav-item" [ngClass]="{'activeButton':router.url === '/events'}">
+      <li class="nav-item" [ngClass]="{'activeButton':router.url.includes('/events')}">
         <a class="nav-link waves-light" [routerLink] = "['events']"  mdbWavesEffect>Events</a>
       </li>
-      <li class="nav-item" [ngClass]="{'activeButton':router.url === '/workshops'}">
+      <li class="nav-item" [ngClass]="{'activeButton':router.url.includes('/workshops')}">
         <a class="nav-link waves-light" [routerLink] = "['workshops']" mdbWavesEffect>Workshops</a>
       </li>
-      <li class="nav-item" [ngClass]="{'activeButton':router.url === '/aboutus'}">
+      <li class="nav-item">
           <a href="#aboutus" class="nav-link waves-light"   mdbWavesEffect>About Us</a>
         </li>
-        <li class="nav-item" [ngClass]="{'activeButton':router.url === '/sponsors'}">
+        <li class="nav-item" [ngClass]="{'activeButton':router.url.includes('/sponsors')}">
           <a class="nav-link waves-light" [routerLink] = "['sponsors']" mdbWavesEffect>Sponsors</a>
         </li>
-        <li class="nav-item" [ngClass]="{'activeButton':router.url === '/proshows'}">
+        <li class="nav-item" [ngClass]="{'activeButton':router.url.includes('/proshows')}">
           <a class="nav-link waves-light" [routerLink] = "['proshows']" mdbWavesEffect>Proshows</a>
         </li>
-        <li class="nav-item" [ngClass]="{'activeButton':router.url === '/contactus'}">
+        <li class="nav-item" [ngClass]="{'activeButton':router.url.includes('/contactus')}">
           <a class="nav-link waves-light" [routerLink] = "['contact']" mdbWavesEffect>Contact us</a>
         </li>
     </ul>

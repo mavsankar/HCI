@@ -5,6 +5,8 @@ import { EventsComponent } from './Events/events.component';
 import { WorkshopsComponent } from './Workshops/worshops.component';
 import { AboutusComponent } from './Aboutus/aboutus.component';
 import { SponsorsComponent } from './Sponsors/sponsors.component';
+import { EventComponent } from './Event/event.component';
+import { WorkshopComponent } from './Workshop/workshop.component';
 
 
 const routes: Routes = [
@@ -12,7 +14,9 @@ const routes: Routes = [
   {path:'events',component:EventsComponent},
   {path:'workshops',component:WorkshopsComponent},
   {path:'aboutus',component:AboutusComponent},
-  {path:'sponsors',component:SponsorsComponent}
+  {path:'sponsors',component:SponsorsComponent},
+  {path:'events/:event',component:EventComponent},
+  {path:'workshops/:workshop',component:WorkshopComponent}
 
 ];
 

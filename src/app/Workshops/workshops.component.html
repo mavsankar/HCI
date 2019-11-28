@@ -1,116 +1,17 @@
 <div class="container">
-<div class="row">
-<div class="col-xs-4 card__collection clear-fix">
-    <div class="cards cards--two">
-        <img src="../../assets/autoIgnite.jpg" class="img-responsive" alt="Auto Ignite">
-        <span class="cards--two__rect"></span>
-        <span class="cards--two__tri"></span>
-        <p>Auto Ignite</p>
-        </div>
-</div>
-<div class="col-xs-4 card__collection clear-fix">
-        <div class="cards cards--two">
-            <img src="../../assets/iot.jpg" class="img-responsive" alt="Internet of Things">
-            <span class="cards--two__rect"></span>
-            <span class="cards--two__tri"></span>
-            <p>Internet of Things</p>
-            </div>
-    </div>
-    <div class="col-xs-4 card__collection clear-fix">
-            <div class="cards cards--two">
-                <img src="../../assets/skyscrapper.jpg" class="img-responsive" alt="Tall Building Design">
-                <span class="cards--two__rect"></span>
-                <span class="cards--two__tri"></span>
-                <p>Tall Building Design</p>
-                </div>
-        </div>
-</div>
-<div class="row">
-<div class="col-xs-3 card__collection clear-fix">
-    <div class="cards cards--two">
-        <img src="../../assets/cybersecurity.jpg" class="img-responsive" alt="Ethical Hacking">
-        <span class="cards--two__rect"></span>
-        <span class="cards--two__tri"></span>
-        <p>Ethical Hacking</p>
-        </div>
-</div>
-<div class="col-xs-3 card__collection clear-fix">
-        <div class="cards cards--two">
-            <img src="../../assets/drone.jpg" class="img-responsive" alt="RC Planes and Drones">
-            <span class="cards--two__rect"></span>
-            <span class="cards--two__tri"></span>
-            <p>RC Planes and Drones</p>
-            </div>
-    </div>
-    <div class="col-xs-3 card__collection clear-fix">
-            <div class="cards cards--two">
-                <img src="../../assets/imagep.jpg" class="img-responsive" alt="Image Processing">
-                <span class="cards--two__rect"></span>
-                <span class="cards--two__tri"></span>
-                <p>Image Processing</p>
-                </div>
-        </div>
-</div>
-<div class="row">
-        <div class="col-xs-3 card__collection clear-fix">
-            <div class="cards cards--two">
-                <img src="../../assets/ar.jpg" class="img-responsive" alt="Augmented Reality">
-                <span class="cards--two__rect"></span>
-                <span class="cards--two__tri"></span>
-                <p>Augmented Reality</p>
-</div>
-</div>
-    <div class="col-xs-3 card__collection clear-fix">
-    <div class="cards cards--two">
-        <img src="../../assets/blockchain.gif" class="img-responsive" alt="Essentials of Blockchain">
-        <span class="cards--two__rect"></span>
-        <span class="cards--two__tri"></span>
-        <p>Essentials of Blockchain</p>
-        </div>
-</div>
-<div class="col-xs-3 card__collection clear-fix">
-        <div class="cards cards--two">
-            <img src="../../assets/Electric_Car.jpg" class="img-responsive" alt="Hybrid Car Design">
-            <span class="cards--two__rect"></span>
-            <span class="cards--two__tri"></span>
-            <p>Hybrid Car Design</p>
-            </div>
-    </div>
-    </div>
-    <div class="row">
-            <div class="col-xs-3 card__collection clear-fix">
-                <div class="cards cards--two">
-                    <img src="../../assets/ai.jpg" class="img-responsive" alt="Artificial Intelligence">
-                    <span class="cards--two__rect"></span>
-                    <span class="cards--two__tri"></span>
-                    <p>Artificial Intelligence</p>
-                    </div>
-            </div>
-            <div class="col-xs-3 card__collection clear-fix">
-                    <div class="cards cards--two">
-                        <img src="../../assets/mechElectrix.jpeg" class="img-responsive" alt="Mech-Electrix">
-                        <span class="cards--two__rect"></span>
-                        <span class="cards--two__tri"></span>
-                        <p>Mech-Electrix</p>
+        <div class="row" >
+                <div *ngFor='let event of events'   class="col-xs-4 card__collection clear-fix">
+                        <div style="cursor: pointer" [routerLink] = "[event.name]" class="cards cards--three">
+                        <img src="{{event.image}}" class="img-responsive" alt="{{events.name}}">
+                        <span class="cards--three__rect-1">
+                                <span class="shadow-1"></span>
+                                <p>{{events.Name}}</p>
+                        </span>
+                        <span class="cards--three__rect-2">
+                                <span class="shadow-2"></span>
+                        </span>
+                        <span class="cards--three__circle"></span>
                         </div>
                 </div>
-                <div class="col-xs-3 card__collection clear-fix">
-                        <div class="cards cards--two">
-                            <img src="../../assets/ml.jpg" class="img-responsive" alt="Machine Learning">
-                            <span class="cards--two__rect"></span>
-                            <span class="cards--two__tri"></span>
-                            <p>Machine Learning</p>
-                            </div>
-                    </div>
-            </div>
-    <div class="row">
-            <div class="col-xs-3 card__collection clear-fix">
-                <div class="cards cards--two">
-                    <img src="../../assets/humanoid.jpg" class="img-responsive" alt="Humanoid Robotics">
-                    <span class="cards--two__rect"></span>
-                    <span class="cards--two__tri"></span>
-                    <p>Humanoid Robotics</p>
-                    </div>
-            </div>
-    </div>
+        </div>
 </div>
