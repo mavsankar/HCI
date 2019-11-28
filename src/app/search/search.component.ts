@@ -10,6 +10,7 @@ export interface State {
   image: string;
   name: string;
   description: string;
+  Category:string;
 }
 
 /**

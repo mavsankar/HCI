@@ -14,6 +14,7 @@ import { EventsComponent } from './Events/events.component';
 import { WorkshopsComponent } from './Workshops/worshops.component';
 import { SponsorsComponent } from './Sponsors/sponsors.component';
 import { AboutusComponent } from './Aboutus/aboutus.component';
+import { EventComponent } from './Event/event.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { AboutusComponent } from './Aboutus/aboutus.component';
     EventsComponent,
     WorkshopsComponent,
     SponsorsComponent,
-    AboutusComponent
+    AboutusComponent,
+    EventComponent
   ],
   imports: [
     BrowserModule,

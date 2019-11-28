@@ -1,3 +1,12 @@
+
+.date{
+  background-image: url(../../assets/img2.png); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+
+
 header {
   position: relative;
   height: 100%;
@@ -6,9 +15,8 @@ header {
 }
 
 h1 {
-  padding: 100px 0;
-  font: 44px "Arial";
-  text-align: center;
+  padding: 10% 0;
+  font-size: 6vw;
 }
 
 header h1 {
@@ -132,7 +140,7 @@ p span + span {
 }
 @media (min-width: 60pt) {
   p {
-    font-size: 1.5rem;
+    font-size: 3vw;
   }
 }
 html,

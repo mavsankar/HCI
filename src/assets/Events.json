@@ -1,24 +1,166 @@
 {
     "Events": [
         {
-          "name": "Battle of Bands",
-          "description": "Timings: 2-3:30pm",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Arkansas.svg"
+          "name": "AVION-E",
+          "description": "Description",
+          "image": "../../assets/avion.jpg",
+          "Category":"events"
         },
         {
-          "name": "Dance Wars",
-          "description":"Timings: TBD",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg"
+          "name": "JAHAAZ",
+          "description":"Description",
+          "image": "../../assets/jahaaz.jpg",
+          "Category":"events"
         },
         {
-          "name": "Who eats more food?",
-          "description": "Timings: Whole day event",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Florida.svg"
+          "name": "WRECKAGE",
+          "description": "Description",
+          "image": "../../assets/wrechage.jpg",
+          "Category":"events"
         },
         {
-          "name": "Suspense Event",
-          "description": "Timings: Neekenduku",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Texas.svg"
+          "name": "HOVERMANIA",
+          "description":"Description",
+          "image": "../../assets/hovermania-finaltrial.jpg",
+          "Category":"events"
+        },
+        {
+          "name": "NATIONAL PROGRAMMING LEAGUE",
+          "description":"Description",
+          "image": "../../assets/npl.jpg",
+          "Category":"events"
+        },
+        {
+          "name": "NATIONAL ROBOTICS CHAMPIONSHIP",
+          "description":"Description",
+          "image": "../../assets/nrc.jpg",
+          "Category":"events"
+        },
+        {
+          "name": "THE THREE MUSKETEERS",
+          "description":"Description",
+          "image": "../../assets/3musketeers..jpg",
+          "Category":"events"
+        },
+        {
+          "name": "ENIGMA",
+          "description":"Description",
+          "image": "../../assets/enigma.jpg",
+          "Category":"events"
+        },
+        {
+          "name": "TECHFRESH",
+          "description":"Description",
+          "image": "../../assets/techfresh.jpg",
+          "Category":"events"
+        } 
+        ,
+        {
+          "name": "PAPER PRESENTATION",
+          "description":"Description",
+          "image": "../../assets/ppt.jpg",
+          "Category":"events"
+        } ,
+        {
+          "name": "Spend It Like Beckham",
+          "description":"Description",
+          "image": "../../assets/SILB.jpg",
+          "Category":"events"
+        },
+        {
+          "name": "THE THIRD ARM",
+          "description":"Description",
+          "image": "../../assets/third_arm.png",
+          "Category":"events"
+        } ,
+        {
+          "name": "inCELLigence",
+          "description":"Description",
+          "image": "../../assets/incelligence.jpg",
+          "Category":"events"
+        },
+        {
+          "name": "Construir",
+          "description":"Description",
+          "image": "../../assets/construir.jpg",
+          "Category":"events"
+        },
+        {
+          "name": "Auto Ignite",
+          "description":"Description",
+          "image": "../../assets/autoIgnite.jpg",
+          "Category":"workshops"
+        },
+        {
+          "name": "Internet of Things",
+          "description":"Description",
+          "image": "../../assets/iot.jpg",
+          "Category":"workshops"
+        } ,
+        {
+          "name": "Tall Building Design",
+          "description":"Description",
+          "image": "../../assets/skyscrapper.jpg",
+          "Category":"workshops"
+        } ,
+        {
+          "name": "Ethical Hacking",
+          "description":"Description",
+          "image": "../../assets/cybersecurity.jpg",
+          "Category":"workshops"
+        } ,
+        {
+          "name": "RC Planes and Drones",
+          "description":"Description",
+          "image": "../../assets/drone.jpg",
+          "Category":"workshops"
+        },
+        {
+          "name": "Image Processing",
+          "description":"Description",
+          "image": "../../assets/imagep.jpg",
+          "Category":"workshops"
+        },
+        {
+          "name": "Augmented Reality",
+          "description":"Description",
+          "image": "../../assets/ar.jpg",
+          "Category":"workshops"
+        },
+        {
+          "name": "Essentials of Blockchain",
+          "description":"Description",
+          "image": "../../assets/blockchain.gif",
+          "Category":"workshops"
+        },
+        {
+          "name": "Hybrid Car Design",
+          "description":"Description",
+          "image": "../../assets/Electric_Car.jpg",
+          "Category":"workshops"
+        },{
+          "name": "Artificial Intelligence",
+          "description":"Description",
+          "image": "../../assets/ai.jpg",
+          "Category":"workshops"
+        },
+        {
+          "name": "Mech-Electrix",
+          "description":"Description",
+          "image": "../../assets/mechElectrix.jpeg",
+          "Category":"workshops"
+        },
+        {
+          "name": "Machine Learning",
+          "description":"Description",
+          "image": "../../assets/ml.jpg",
+          "Category":"workshops"
+        },
+        {
+          "name": "Humanoid Robotics",
+          "description":"Description",
+          "image": "../../assets/humanoid.jpg",
+          "Category":"workshops"
         }
     ]
 }
